@@ -1,4 +1,4 @@
-# SkryptOS APT Repository
+# 🌸 SkryptOS ~Designed for Efficiency
 
 This is the official APT repository for SkryptOS. It provides custom packages, system updates,and enhancements while maintaining compatibility.
 
@@ -48,5 +48,3 @@ db/ -> Repository metadata
 
 ## 🛠️ Contributing
 To contribute, fork this repo, upload .deb packages, and create a pull request.
-
-# 🌸 SkryptOS Designed for Efficiency
