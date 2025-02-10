@@ -38,13 +38,10 @@ sudo apt install skryptos-desktop
 
 ## 📜 Repository Structure
 
-dists/stable/main/binary-amd64/ -> Stable release packages
-
-dists/testing/main/binary-amd64/ -> Testing branch packages
-
-pool/main/ -> Main package storage
-
-db/ -> Repository metadata
+•dists/stable/main/binary-amd64/ -> Stable release packages
+•dists/testing/main/binary-amd64/ -> Testing branch packages
+•pool/main/ -> Main package storage
+•db/ -> Repository metadata
 
 ## 🛠️ Contributing
 To contribute, fork this repo, upload .deb packages, and create a pull request.
