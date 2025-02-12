@@ -1,0 +1,8 @@
+Origin: SkryptOS
+Label: SkryptOS Repo
+Suite: stable
+Codename stable
+Architectures: amd64
+Components: main
+Description: SkryptOS Custom APT Repository
+SignWith: 9A16AD22C1E98D61589CCE5A4ED49E7D069402F3
