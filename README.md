@@ -1,4 +1,4 @@
-# 🌸 SkryptOS ~Designed for Efficiency
+# 🌸 SkryptOS ~ Effortless Performance, Maximum Security
 
 This is the official APT repository for SkryptOS. It provides custom packages, system updates,and enhancements while maintaining compatibility.
 
