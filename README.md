@@ -10,8 +10,7 @@ To use this repository, follow these steps:
 
 Run the following command to import the repository's signing key:
 
-bash
-wget -qO - https://github.com/SakuraSkrypt/SkryptOS-Repo/raw/main/public.gpg | sudo tee /etc/apt/trusted.gpg.d/skryptos.gpg > /dev/null
+bash wget -qO - https://github.com/SakuraSkrypt/SkryptOS-Repo/raw/main/public.gpg | sudo tee /etc/apt/trusted.gpg.d/skryptos.gpg > /dev/null
 
 ### 2️⃣ Add the Repository
 
