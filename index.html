@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkryptOS</title>
+    <meta name="description" content="SkryptOS - A minimalist, secure, and optimized Linux distribution.">
+    <title>SkryptOS | Sakuraskrypt.x</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #0a0a0a; color: white; font-family: 'Inter', sans-serif; }
         .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
         .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .sakura-petal {
+            position: absolute;
+            animation: fall 10s infinite linear;
+            opacity: 0.6;
+        }
+        @keyframes fall {
+            0% { transform: translateY(-100px); opacity: 0.6; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
     </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen text-center px-6">
-    
+<body class="flex flex-col items-center justify-center min-h-screen text-center px-6 relative overflow-hidden">
+
+    <!-- Sakura Petals Animation -->
+    <div class="absolute top-0 left-0 right-0 bottom-0">
+        <div class="sakura-petal" style="left: 10%; animation-duration: 12s;"></div>
+        <div class="sakura-petal" style="left: 35%; animation-duration: 8s;"></div>
+        <div class="sakura-petal" style="left: 60%; animation-duration: 10s;"></div>
+        <div class="sakura-petal" style="left: 80%; animation-duration: 14s;"></div>
+    </div>
+
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 py-4 px-6 bg-black/50 backdrop-blur-md flex justify-between items-center w-full">
         <span class="text-xl font-semibold">SkryptOS</span>
@@ -21,7 +39,7 @@
 
     <!-- Hero Section -->
     <section class="flex flex-col items-center justify-center mt-20">
-        <h1 class="text-4xl md:text-6xl font-bold fade-in">SkryptOS</h1>
+        <h1 class="text-5xl md:text-7xl font-bold fade-in">SkryptOS</h1>
         <p class="text-gray-400 text-lg mt-3 fade-in delay-200">A better Linux experience, redefined.</p>
         <a href="#features" class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-lg text-white text-lg fade-in delay-400">
             Explore Features
