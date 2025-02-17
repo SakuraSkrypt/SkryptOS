@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkryptOS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0a0a0a; color: white; font-family: 'Inter', sans-serif; }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen text-center px-6">
+    
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 py-4 px-6 bg-black/50 backdrop-blur-md flex justify-between items-center w-full">
+        <span class="text-xl font-semibold">SkryptOS</span>
+        <a href="#features" class="text-gray-300 hover:text-white transition">Features</a>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center justify-center mt-20">
+        <h1 class="text-4xl md:text-6xl font-bold fade-in">SkryptOS</h1>
+        <p class="text-gray-400 text-lg mt-3 fade-in delay-200">A better Linux experience, redefined.</p>
+        <a href="#features" class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-lg text-white text-lg fade-in delay-400">
+            Explore Features
+        </a>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="mt-20 w-full max-w-4xl fade-in">
+        <h2 class="text-3xl font-semibold">Why SkryptOS?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div class="bg-gray-900 p-6 rounded-lg">
+                <h3 class="text-xl font-medium">Windows-Like UI</h3>
+                <p class="text-gray-400">A sleek, ergonomic desktop that feels familiar.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg">
+                <h3 class="text-xl font-medium">Optimized for Gaming</h3>
+                <p class="text-gray-400">Play your favorite Windows games seamlessly.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg">
+                <h3 class="text-xl font-medium">Secure & Stable</h3>
+                <p class="text-gray-400">Built on Debian Stable with security enhancements.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg">
+                <h3 class="text-xl font-medium">Easy Software Management</h3>
+                <p class="text-gray-400">Download apps effortlessly through your browser.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-20 py-6 text-gray-500">
+        © 2025 SkryptOS | <a href="https://github.com/SakuraSkrypt" class="hover:text-white transition">GitHub</a>
+    </footer>
+
+    <script>
+        // Fade-in animation on scroll
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".fade-in");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+</html>
