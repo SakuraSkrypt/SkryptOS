@@ -3,133 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SkryptOS - A minimalist, secure, and optimized Linux distribution.">
-    <title>SkryptOS | Sakuraskrypt.x</title>
+    <title>SkryptOS - The Next-Generation Operating System</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0a0a0a; color: white; font-family: 'Inter', sans-serif; }
-        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
-        .fade-in.visible { opacity: 1; transform: translateY(0); }
-        .sakura-petal {
-            position: absolute;
-            animation: fall 10s infinite linear;
-            opacity: 0.6;
-        }
-        @keyframes fall {
-            0% { transform: translateY(-100px); opacity: 0.6; }
-            100% { transform: translateY(100vh); opacity: 0; }
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: white; }
+        .hero { background: linear-gradient(135deg, #1a1a1a, #0a0a0a); }
+        .glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; }
     </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen text-center px-6 relative overflow-hidden">
-
-    <!-- Sakura Petals Animation -->
-    <div class="absolute top-0 left-0 right-0 bottom-0">
-        <div class="sakura-petal" style="left: 10%; animation-duration: 12s;"></div>
-        <div class="sakura-petal" style="left: 35%; animation-duration: 8s;"></div>
-        <div class="sakura-petal" style="left: 60%; animation-duration: 10s;"></div>
-        <div class="sakura-petal" style="left: 80%; animation-duration: 14s;"></div>
-    </div>
-
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 right-0 py-4 px-6 bg-black/50 backdrop-blur-md flex justify-between items-center w-full">
-        <span class="text-xl font-semibold">SkryptOS</span>
-        <a href="#features" class="text-gray-300 hover:text-white transition">Features</a>
-    </nav>
-
+<body class="text-white">
     <!-- Hero Section -->
-    <section class="flex flex-col items-center justify-center mt-20">
-        <h1 class="text-5xl md:text-7xl font-bold fade-in">SkryptOS</h1>
-        <p class="text-gray-400 text-lg mt-3 fade-in delay-200">A better Linux experience, redefined.</p>
-        <a href="#features" class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-lg text-white text-lg fade-in delay-400">
-            Explore Features
-        </a>
+    <section class="hero h-screen flex flex-col justify-center items-center text-center p-10">
+        <h1 class="text-5xl font-bold">SkryptOS: The Next-Generation Operating System</h1>
+        <p class="text-lg mt-4 opacity-80">Experience the future of computing. Inspired by the best, but surpassing all others.</p>
+        <a href="#" class="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition">Download SkryptOS</a>
     </section>
 
-    <!-- About SkryptOS -->
-    <section id="about" class="mt-20 w-full max-w-4xl fade-in">
-        <h2 class="text-3xl font-semibold">About SkryptOS</h2>
-        <p class="text-gray-400 mt-6">
-            SkryptOS is a Linux distribution designed to offer a minimalist, secure, and optimized computing experience. Whether you're a power user, a gamer, or someone looking for a familiar environment, SkryptOS blends the best features of Linux with the ease of use you expect.
-        </p>
-    </section>
-
-    <!-- Features -->
-    <section id="features" class="mt-20 w-full max-w-4xl fade-in">
-        <h2 class="text-3xl font-semibold">Why SkryptOS?</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <h3 class="text-xl font-medium">Windows-Like UI</h3>
-                <p class="text-gray-400">A sleek, ergonomic desktop that feels familiar.</p>
+    <!-- Features Section -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold text-center mb-10">Elevate Your Computing Experience</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass">
+                <h3 class="text-2xl font-semibold">Unmatched Performance</h3>
+                <p class="mt-2 opacity-80">Run applications faster and smoother with seamless multitasking.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <h3 class="text-xl font-medium">Optimized for Gaming</h3>
-                <p class="text-gray-400">Play your favorite Windows games seamlessly.</p>
+            <div class="glass">
+                <h3 class="text-2xl font-semibold">Intuitive Interface</h3>
+                <p class="mt-2 opacity-80">Navigate with ease using our sleek, user-friendly design.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <h3 class="text-xl font-medium">Secure & Stable</h3>
-                <p class="text-gray-400">Built on Debian Stable with security enhancements.</p>
-            </div>
-            <div class="bg-gray-900 p-6 rounded-lg">
-                <h3 class="text-xl font-medium">Easy Software Management</h3>
-                <p class="text-gray-400">Download apps effortlessly through your browser.</p>
+            <div class="glass">
+                <h3 class="text-2xl font-semibold">Enhanced Security</h3>
+                <p class="mt-2 opacity-80">Protect your data with advanced security features.</p>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots -->
-    <section id="screenshots" class="mt-20 w-full max-w-4xl fade-in">
-        <h2 class="text-3xl font-semibold">SkryptOS in Action</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            <div class="bg-gray-800 rounded-lg">
-                <img src="screenshot1.png" alt="SkryptOS Screenshot 1" class="w-full rounded-t-lg" loading="lazy">
-                <div class="p-4">
-                    <p class="text-gray-400">The clean, user-friendly desktop environment.</p>
-                </div>
+    <!-- Performance Section -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold text-center mb-10">Performance Beyond Comparison</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="glass">
+                <h3 class="text-3xl font-semibold">50%</h3>
+                <p class="opacity-80">Faster boot times</p>
             </div>
-            <div class="bg-gray-800 rounded-lg">
-                <img src="screenshot2.png" alt="SkryptOS Screenshot 2" class="w-full rounded-t-lg" loading="lazy">
-                <div class="p-4">
-                    <p class="text-gray-400">Smooth performance for gaming and productivity.</p>
-                </div>
+            <div class="glass">
+                <h3 class="text-3xl font-semibold">30%</h3>
+                <p class="opacity-80">Improved efficiency</p>
+            </div>
+            <div class="glass">
+                <h3 class="text-3xl font-semibold">2X</h3>
+                <p class="opacity-80">Application speed</p>
             </div>
         </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="mt-20 w-full max-w-4xl fade-in">
-        <h2 class="text-3xl font-semibold">Get SkryptOS</h2>
-        <p class="text-gray-400 mt-6">Ready to try SkryptOS? Download the latest release and start experiencing the future of Linux.</p>
-        <a href="https://example.com/download" class="mt-6 px-6 py-3 bg-green-600 hover:bg-green-500 transition rounded-lg text-white text-lg">Download Now</a>
-    </section>
-
-    <!-- Community & Support -->
-    <section id="community" class="mt-20 w-full max-w-4xl fade-in">
-        <h2 class="text-3xl font-semibold">Join the Community</h2>
-        <p class="text-gray-400 mt-6">Get involved, share your experiences, and ask for support in our community spaces.</p>
-        <a href="https://forum.sakuraskrypt.x" class="mt-6 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 transition rounded-lg text-white text-lg">Visit Forum</a>
     </section>
 
     <!-- Footer -->
-    <footer class="mt-20 py-6 text-gray-500">
-        © 2025 SkryptOS | <a href="https://github.com/SakuraSkrypt" class="hover:text-white transition">GitHub</a>
+    <footer class="text-center py-8 opacity-70">
+        <p>&copy; 2025 SkryptOS. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        // Fade-in animation on scroll
-        document.addEventListener("DOMContentLoaded", () => {
-            const elements = document.querySelectorAll(".fade-in");
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                    }
-                });
-            }, { threshold: 0.3 });
-
-            elements.forEach(el => observer.observe(el));
-        });
-    </script>
-
 </body>
 </html>
