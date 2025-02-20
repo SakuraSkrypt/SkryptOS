@@ -3,45 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkryptOS - The Next-Generation Operating System</title>
+    <title>SkryptOS - The Next-Generation OS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: white; }
-        .hero { background: linear-gradient(135deg, #1a1a1a, #0a0a0a); }
-        .glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .section {
+            max-width: 800px;
+            margin: auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            background: #007bff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 20px;
+        }
     </style>
 </head>
-<body class="text-white">
+<body>
+
     <!-- Hero Section -->
-    <section class="hero h-screen flex flex-col justify-center items-center text-center p-10">
+    <section class="hero">
         <h1 class="text-5xl font-bold">SkryptOS: The Next-Generation Operating System</h1>
-        <p class="text-lg mt-4 opacity-80">Experience the future of computing. Inspired by the best, but surpassing all others.</p>
-        <a href="#" class="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition">Download SkryptOS</a>
+        <p class="text-lg mt-4 opacity-80">Experience the future of computing with SkryptOS, inspired by the best, but surpassing all others.</p>
+        <a href="#" class="btn">Download SkryptOS</a>
     </section>
 
     <!-- Features Section -->
-    <section class="container mx-auto px-6 py-16">
-        <h2 class="text-4xl font-bold text-center mb-10">Elevate Your Computing Experience</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="glass">
-                <h3 class="text-2xl font-semibold">Unmatched Performance</h3>
-                <p class="mt-2 opacity-80">Run applications faster and smoother with seamless multitasking.</p>
-            </div>
-            <div class="glass">
-                <h3 class="text-2xl font-semibold">Intuitive Interface</h3>
-                <p class="mt-2 opacity-80">Navigate with ease using our sleek, user-friendly design.</p>
-            </div>
-            <div class="glass">
-                <h3 class="text-2xl font-semibold">Enhanced Security</h3>
-                <p class="mt-2 opacity-80">Protect your data with advanced security features.</p>
-            </div>
+    <section class="section">
+        <h2 class="text-4xl font-bold mb-10">Elevate Your Computing Experience</h2>
+        <div class="glass">
+            <h3 class="text-2xl font-semibold">Unmatched Performance</h3>
+            <p class="mt-2 opacity-80">Ensuring your applications run faster and smoother than ever before.</p>
+        </div>
+        <div class="glass">
+            <h3 class="text-2xl font-semibold">Intuitive Interface</h3>
+            <p class="mt-2 opacity-80">Navigate with ease using our sleek, user-friendly design.</p>
+        </div>
+        <div class="glass">
+            <h3 class="text-2xl font-semibold">Enhanced Security</h3>
+            <p class="mt-2 opacity-80">Protect your data with advanced security features.</p>
         </div>
     </section>
 
-    <!-- Performance Section -->
-    <section class="container mx-auto px-6 py-16">
-        <h2 class="text-4xl font-bold text-center mb-10">Performance Beyond Comparison</h2>
-        <div class="grid md:grid-cols-3 gap-8 text-center">
+    <!-- Revolutionary Features -->
+    <section class="section">
+        <h2 class="text-4xl font-bold mb-10">Revolutionary Features</h2>
+        <div class="glass">
+            <h3 class="text-2xl font-semibold">Dynamic Resource Management</h3>
+            <p class="mt-2 opacity-80">Optimized performance for multitasking.</p>
+        </div>
+        <div class="glass">
+            <h3 class="text-2xl font-semibold">Advanced File System</h3>
+            <p class="mt-2 opacity-80">Unparalleled speed and reliability for data management.</p>
+        </div>
+        <div class="glass">
+            <h3 class="text-2xl font-semibold">Customizable Environment</h3>
+            <p class="mt-2 opacity-80">Make SkryptOS truly yours with extensive customization.</p>
+        </div>
+    </section>
+
+    <!-- Performance -->
+    <section class="section">
+        <h2 class="text-4xl font-bold mb-10">Performance Beyond Comparison</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="glass">
                 <h3 class="text-3xl font-semibold">50%</h3>
                 <p class="opacity-80">Faster boot times</p>
@@ -57,9 +108,40 @@
         </div>
     </section>
 
+    <!-- Built for Developers -->
+    <section class="section">
+        <h2 class="text-4xl font-bold mb-10">Built for Developers & Creators</h2>
+        <div class="glass">
+            <h3 class="text-2xl font-semibold">Native Development Tools</h3>
+            <p class="mt-2 opacity-80">Comprehensive tools for app development.</p>
+        </div>
+        <div class="glass">
+            <h3 class="text-2xl font-semibold">Cross-Platform Compatibility</h3>
+            <p class="mt-2 opacity-80">Seamless application support across platforms.</p>
+        </div>
+        <div class="glass">
+            <h3 class="text-2xl font-semibold">Open Source Ecosystem</h3>
+            <p class="mt-2 opacity-80">Contribute and benefit from an open-source community.</p>
+        </div>
+    </section>
+
+    <!-- System Requirements -->
+    <section class="section">
+        <h2 class="text-4xl font-bold mb-10">System Requirements & Compatibility</h2>
+        <div class="glass">
+            <h3 class="text-2xl font-semibold">Minimum Requirements</h3>
+            <p class="mt-2 opacity-80">Intel Core i3, 4GB RAM, 20GB storage.</p>
+        </div>
+        <div class="glass">
+            <h3 class="text-2xl font-semibold">Supported Architectures</h3>
+            <p class="mt-2 opacity-80">x86-64 & ARM64 compatibility.</p>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="text-center py-8 opacity-70">
         <p>&copy; 2025 SkryptOS. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
