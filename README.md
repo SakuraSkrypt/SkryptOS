@@ -47,3 +47,5 @@ sudo apt install skryptos-desktop
 
 ## 🛠️ Contributing
 To contribute, fork this repo, upload .deb packages, and create a pull request.
+or
+just buy me a coffee. https://buymeacoffee.com/sakuraskrypt
