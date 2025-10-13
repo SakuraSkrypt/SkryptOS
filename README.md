@@ -68,11 +68,11 @@ oh and you have the most optimised, powerful, secure, flexible, private and stab
 
 ## 📜 Coming Soon...
 
-SkryptOS Pro (somehow even better)
-Self installer (no need for USB flash drive)
-Secure Boot Compatibility
-Alternative architecture support 
-SkryptOS Gen 2
+-SkryptOS Pro (somehow even better)
+-Self installer (no need for USB flash drive)
+-Secure Boot Compatibility
+-Alternative architecture support 
+-SkryptOS Gen 2
 
 ## 🛠️ Contributing
 
