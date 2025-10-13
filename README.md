@@ -10,8 +10,8 @@ This is the official repository for SkryptOS. It provides custom packages, syste
 - Any USB ISO flash tool should work but we recommend (https://www.
 - A Computer (obviously)
 
-‼️🚨 we only officially offer x86_64 support (modern ""Normal"" computers) at the moment 🚨‼️
-with hopes to add i386 (should work), arm64 and many others later on" It should still work, but it is completely untested
+‼️🚨 we only officially offer x86_64 support (modern ""Normal"" computers) at the moment
+with hopes to add i386 (should work), arm64 and many others later on" It should still work, but it is completely untested 🚨‼️
 
 To use this repository, follow these steps:
 
@@ -29,7 +29,7 @@ https://www.
 ### 2️⃣ Install SkryptOS to your System
 
 ### For Beginners
-First things first lets get rid of a few headaches
+    First things first lets get rid of a few headaches.
 almost every system has a bios, dont panic its more scared of you then you are of it.
 true i 'Could' write an entire signing key for secure boot compatibilty but it is alot of work and theres no real risk in turning it off
 just dont go plugging in random USBs you find on the street if you have already, you deserve it.
