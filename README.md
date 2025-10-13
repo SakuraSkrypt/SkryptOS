@@ -28,13 +28,15 @@ https://www.
 
 ### 2️⃣ Install SkryptOS to your System
 
-### For Beginners
-    First things first lets get rid of a few headaches.
+First things first lets get rid of a few headaches.
 almost every system has a bios, dont panic its more scared of you then you are of it.
-true i 'Could' write an entire signing key for secure boot compatibilty but it is alot of work and theres no real risk in turning it off
-just dont go plugging in random USBs you find on the street if you have already, you deserve it.
+
+True i 'could' write an entire signing key for secure boot compatibilty but it is alot of work and theres no real risk in turning it off,
+just dont go plugging in random USBs you find on the street, if you have already, you deserve it.
+
 many, but not all, bios have a boot device menu, if you know how to use it, use it.
-but so we are sure that it will work on all systems this is what you should do on even the most stubborn
+
+To ensure that it will work on all systems this is what you should do on even the most stubborn
 systems
 
 - Insert the USB flash drive
@@ -47,8 +49,8 @@ systems
 - if it doesnt restart, restart it
 - pat yourself on the back your almost done
 - go back into bios, then look for the boot order settings and take another picture of it, then move everything that says USB so it is before 
-your hard drive e.g. 
-    #1 USB FDD
+your hard drive e.g.
+    #1 USB FDd
     #2 USB HDD
     #3 Seagate 912GB HDD
 - save and exit
