@@ -50,9 +50,9 @@ systems
 - pat yourself on the back your almost done
 - go back into bios, then look for the boot order settings and take another picture of it, then move everything that says USB so it is before 
 your hard drive e.g.
-    #1 USB FDd
-    #2 USB HDD
-    #3 Seagate 912GB HDD
+-    #1 USB FDD
+-    #2 USB HDD
+-    #3 Seagate 912GB HDD
 - save and exit
 - it will now boot into SkryptOS Live
 - login with Username: demo Password: demo
@@ -68,11 +68,11 @@ oh and you have the most optimised, powerful, secure, flexible, private and stab
 
 ## 📜 Coming Soon...
 
--SkryptOS Pro (somehow even better)
--Self installer (no need for USB flash drive)
--Secure Boot Compatibility
--Alternative architecture support 
--SkryptOS Gen 2
+- SkryptOS Pro (somehow even better)
+- Self installer (no need for USB flash drive)
+- Secure Boot Compatibility
+- Alternative architecture support 
+- SkryptOS Gen 2
 
 ## 🛠️ Contributing
 
